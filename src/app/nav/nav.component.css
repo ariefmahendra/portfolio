@@ -1,0 +1,70 @@
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-name a{
+    max-width: 100px;
+    color: white;
+}
+
+.nav-name:hover{
+    background-color: transparent;
+}
+
+.nav-link{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link-responsive-nonaktif {
+    display: none;
+}
+
+.link a{
+    color: #fff;
+    padding-bottom: 0.75rem;
+}
+
+.link a::after{
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn-navbar {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-navbar:hover, .home-porto:hover{
+    background-color: #1e40af ;
+}
+
+.btn-navbar a, .home-porto a{
+    color: #fff;
+}
