@@ -19,6 +19,12 @@ body{
     background-color: #18181B;
 }
 
+.blur{
+    position: absolute;
+    box-shadow: 50px 50px 1000px 50px #1d4ed8 ;
+    z-index: -100;
+}
+
 .container{
     max-width: 1200px;
     margin: auto;

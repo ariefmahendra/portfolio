@@ -1,8 +1,11 @@
+import { FooterComponent } from './footer/footer.component';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillComponent } from './skill/skill.component';
+import { ExperienceComponent } from './experience/experience.component';
+
 
 @Component({
   selector: 'app-root',
@@ -11,11 +14,13 @@ import { SkillComponent } from './skill/skill.component';
     RouterOutlet,
     NavComponent,
     HeaderComponent,
-    SkillComponent
+    SkillComponent,
+    ExperienceComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Arief Mahendra';
 }
