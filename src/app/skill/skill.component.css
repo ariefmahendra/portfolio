@@ -14,9 +14,21 @@ section .header{
     font-weight: 600;
 }
 
+img{
+    width: 50px;
+    height: 50px;
+}
+
+.skill h2{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
 .skill ul{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -32,7 +44,7 @@ section .header{
     align-items: center;
     border: 1px solid transparent;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #27272a;
     transition: all 0.2s ease-in-out;
 }

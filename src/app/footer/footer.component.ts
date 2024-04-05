@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+  instagramUrl: string = "assets/instagram-logo.png";
+  githubUrl: string = "assets/github-logo.png";
+  telegramUrl: string = "assets/telegram-logo.png";
+  linkedinUrl: string = "assets/linkedin-logo.png";
 
 }
