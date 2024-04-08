@@ -1,25 +1,33 @@
 h2 {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 2.25rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-.exp {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+.thumbnail{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.thumbnail h3{
+  width: 100%;
+  text-align: center;
 }
 
 .portfolio{
-    border: 1px solid transparent;
-    border-radius: 15px;
-    transition: all 0.2s ease-in-out;
-    background-color: #27272a;
-    margin: auto;
-    margin-bottom: 4rem;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+  background-color: #27272a;
+  margin: auto auto 4rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .portfolio img{
@@ -39,4 +47,15 @@ h2 {
     border-color: white;
     background-color: #323232;
     transform: scale(1.05);
+}
+
+.portfolio-content{
+  width: 100%;
+  padding: 1rem;
+}
+
+.portfolio-content p{
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
 }
