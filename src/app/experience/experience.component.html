@@ -1,59 +1,48 @@
 <section class="container" id="experience">
     <h2 class="header">Project</h2>
-    <div class="exp">
+    <div class="project-container">
         <div class="portfolio">
           <div class="thumbnail">
-            <img [src]="bookingRoomUrl" [alt]="portfolio1Alt">
-            <div class="thumbnail-title">
-              <h3>Booking Room App</h3>
-              <a href="https://github.com/ariefmahendra/booking_room_app.git">Github</a>
-            </div>
+            <img [src]="bookingRoomUrl" alt="booking-room">
           </div>
           <div class="portfolio-content">
-            <p>ini adalah content yang harus diisi dengan descripsi aplikasi nya </p>
+            <h3>Booking Room App</h3>
+            <a href="https://github.com/ariefmahendra/booking_room_app.git">Github</a>
+              <p>"Booking Room App" is a Go-based Restful API for company room bookings. It utilizes PostgreSQL for the database, JWT tokens for authentication, and follows clean architecture principles with unit testing. The application is containerized using Docker for streamlined deployment on a server. </p>
           </div>
         </div>
         <div class="portfolio">
           <div class="thumbnail">
-            <img [src]="bookingRoomUrl" [alt]="portfolio1Alt">
-            <div class="thumbnail-title">
-              <h3>Booking Room App</h3>
-              <a href="https://github.com/ariefmahendra/booking_room_app.git">Github</a>
-            </div>
+            <img [src]="enigmaLaundry" alt="enigma-laundry">
           </div>
           <div class="portfolio-content">
-            <p>ini adalah content yang harus diisi dengan descripsi aplikasi nya </p>
+            <h3>Enigma laundry App</h3>
+            <a href="https://github.com/ariefmahendra/enigma-laundry.git">Github</a>
+              <p>Enigma laundry App is a Restful API application that allows users to book laundry services. The application is built with GoLang. this application is implementation of the clean architecture, PostgreSQL, Gin and support database migration.</p>
           </div>
         </div>
         <div class="portfolio">
           <div class="thumbnail">
-            <img [src]="procurementUrl" alt="procurement-url">
-            <div class="thumbnail-title">
-              <h3>Procurement Website</h3>
-              <a href="https://github.com/ariefmahendra/PengadaanBarang.git">Github</a>
-            </div>
+            <img [src]="procurementUrl" alt="procurement">
           </div>
           <div class="portfolio-content">
+            <h3>Procurement Website</h3>
+            <a href="https://github.com/ariefmahendra/PengadaanBarang.git">Github</a>
             <p>In this project, my role is as a frontend developer. I used several technologies to create the look of the website, including Tailwind CSS, Google Chart, and Laravel framework.</p>
           </div>
         </div>
         <div class="portfolio">
           <div class="thumbnail">
-            <img [src]="mirocleUrl" alt="mirocle-thumbnail">
-            <div class="thumbnail-title">
-              <h3>Mirror and Stationary Cycle (Mirocle)</h3>
+            <img [src]="mirocleUrl" alt="mirocle">
+          </div>
+          <div class="portfolio-content">
+            <h3>Mirror and Stationary Cycle (Mirocle)</h3>
+            <div class="link-menu"> 
               <a href="https://github.com/ariefmahendra/MirocleHardware-2.0.git">Github</a>
               <a href="https://www.youtube.com/watch?v=OhRBVEAL6w4">Youtube</a>
             </div>
-          </div>
-          <div class="portfolio-content">
-            <p>Mirocle is an innovative therapeutic product that specifically designed to help post stroke patients in restoring their motor function. By combining concept of mirror therapy and stationary bike, Mirocle provides a stimulus that is to the brain and the patient's nervous system.</p>
-            <p>In this project, my team and I designed the Mirocle project with the features that are:
-              Monitoring heart rate, oxygen saturation, calories burned, number of pedal revolutions and duration.
-              Monitoring is IoT.
-              Monitoring is done through the website.
-              The protocol used for communication is MQTT with QoS level 0.
-              data can be downloaded in csv format</p>
+            <p>
+              Mirocle is a therapeutic device combining mirror therapy with a stationary bike to help stroke patients recover motor function. It leverages the Internet of Things (IoT) to monitor health metrics like heart rate, oxygen saturation, calories burned, pedal revolutions, and exercise duration. This data is accessible through a website using the MQTT protocol (Quality of Service level 0) and can be downloaded in CSV format for further analysis.</p>
           </div>
         </div>
     </div>

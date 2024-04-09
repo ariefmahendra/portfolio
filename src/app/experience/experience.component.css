@@ -1,3 +1,9 @@
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
 h2 {
   display: flex;
   justify-content: center;
@@ -13,26 +19,32 @@ h2 {
   align-items: start;
 }
 
-.thumbnail-title {
+.portfolio-content {
   color: white;
   width: 100%;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-.thumbnail-title a{
+.portfolio-content a{
   color : white;
   transition: all 0.2s ease-in-out;
   margin-right: 1rem;
 }
 
-.thumbnail-title a:hover{
+.portfolio-content a:hover{
   color: blue;
 }
 
-.thumbnail-title img{
-  scale: 0.1;
-  align-content: start;
+.portfolio-content p{
+  margin-top: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .portfolio{
@@ -43,13 +55,13 @@ h2 {
   margin: auto auto 4rem;
   padding: 2rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 1rem;
+  height: 600px;
 }
 
 .portfolio img{
-    width: 400px;
-    border-radius: 15px;
+    width: 100%;
     margin: auto;
 }
 
@@ -59,16 +71,7 @@ h2 {
     transform: scale(1.05);
 }
 
-.portfolio-content{
-  width: 100%;
-  padding: 1rem;
+.link-menu {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.portfolio-content p{
-  color: white;
-  font-size: 1rem;
-  font-weight: 400;
+  gap: 0.5rem;
 }

@@ -10,7 +10,8 @@ import { Component } from '@angular/core';
 export class ExperienceComponent {
   portfolio1Url: string = "/assets/header.png";
   portfolio1Alt: string = "portfolio1";
-  bookingRoomUrl: string = "/assets/booking-room.jpg";
-  mirocleUrl: string = "/assets/mirocle.jpg";
-  procurementUrl: string = "/assets/procurement.png";
+  bookingRoomUrl: string = "/assets/booking-room.svg";
+  mirocleUrl: string = "/assets/mirocle.svg";
+  procurementUrl: string = "/assets/procurement.svg";
+  enigmaLaundry: string = "/assets/enigma-laundry.svg";
 }

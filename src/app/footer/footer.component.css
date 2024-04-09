@@ -47,3 +47,10 @@ li a:hover {
     font-weight: 400;
     margin-bottom: 1rem;
 }
+
+.footer-column p{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
