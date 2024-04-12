@@ -54,3 +54,10 @@ li a:hover {
     font-weight: 400;
 }
 
+/* responsive */
+@media (max-width: 768px) {
+    .footer-wrap{
+        display: block;
+    }
+}
+

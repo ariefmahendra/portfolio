@@ -11,10 +11,17 @@
         <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=mahend.arief@gmail.com" rel="noopener" target="_blank">Hire Me</a>
     </div>
 
-    <!-- responsive -->
-    <div class="hamburger" onclick="toggleMobileMenu()">
-        <span class="hamburger-1"></span>
-        <span class="hamburger-2"></span>
-        <span class="hamburger-3"></span>
+    <div class="hamburger" (click)="toggleMobileMenu()" [ngClass]="{'hamburger-active': menuIsActive}">
+        <span class="hamburger-1" [ngClass]="{'hamburger-1-active': menuIsActive}"></span>
+        <span class="hamburger-2" [ngClass]="{'hamburger-2-active': menuIsActive}"></span>
+        <span class="hamburger-3" [ngClass]="{'hamburger-3-active': menuIsActive}"></span>
+    </div>
+    
+    <div class="nav-link-responsive-nonaktif" [ngClass]="{'nav-link-responsive-aktif': menuIsActive}">
+        <li id="link1" class="link"><a href="#resume">Resume</a></li>
+        <li id="link1" class="link"><a href="#skill">Skill</a></li>
+        <li id="link1" class="link"><a href="#experience">Experience</a></li>
+        <li id="link1" class="link"><a href="#organization">Organization & Volunteering</a></li>
+        <li id="link1" class="link"><a href="#contact">Contact</a></li>
     </div>
 </nav>

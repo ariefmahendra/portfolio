@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
+  menuIsActive: boolean = false;
 
+  toggleMobileMenu() {
+    this.menuIsActive = !this.menuIsActive;
+  }
 }

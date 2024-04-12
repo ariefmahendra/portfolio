@@ -68,3 +68,92 @@ nav{
 .btn-navbar a, .home-porto a{
     color: #fff;
 }
+
+/* responsive design */
+@media (max-width: 768px) {
+
+    nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        z-index: 15;
+        background-color: #18181B;
+    }
+    
+    .nav-link{
+        display: none;
+    }
+
+    .btn-navbar{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .hamburger-1, .hamburger-2, .hamburger-3{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .hamburger-2{
+        width: 50px;
+    }
+
+    .hamburger-2-active{
+        opacity: 0;
+    }
+
+    .hamburger-1-active{
+        transform: translateY(13px) rotate(45deg);
+    }
+
+    .hamburger-3-active{
+        transform: translateY(-13px) rotate(-45deg);
+    }
+
+    .nav-link-responsive-nonaktif{
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link-responsive-aktif {
+        position: fixed;
+        left: 0;
+        top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #18181B;
+        z-index: 120;
+        padding-top: 1.5rem;
+        transition: all 0.3s ease-in-out;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .nav-link-responsive-aktif .link{
+        margin-bottom: 10px;
+    }
+
+    .nav-link-responsive-aktif li{
+        list-style: none;
+    }
+}
+

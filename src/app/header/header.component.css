@@ -62,3 +62,25 @@ header .image img{
     margin: auto;
     border-radius: 15px;
 }
+
+/* responsive */
+
+@media (max-width: 768px) {
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header .content h1{
+        line-height: 3rem;
+    }
+
+    header .image{
+        grid-area: 1/1/2/2;
+        width: 100px;
+    }
+
+    header .image::before{
+        display: none;
+    }
+}
+
