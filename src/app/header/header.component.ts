@@ -1,10 +1,10 @@
-import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
+import { ScrollAnimationDirective } from '../directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [ScrollAnimationDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
