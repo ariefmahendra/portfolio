@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ScrollAnimationDirective } from '../directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-skill',
   standalone: true,
-  imports: [],
+  imports: [ScrollAnimationDirective],
   templateUrl: './skill.component.html',
   styleUrl: './skill.component.css'
 })
@@ -24,4 +25,7 @@ export class SkillComponent {
   phpUrl: string = "/assets/php-icon.svg";
   csharpUrl: string = "/assets/csharp-icon.svg";
   dotnetUrl: string = "/assets/netframework-icon.svg";
-}
+  jenkinsUrl: string = "/assets/jenkins-icon.svg";
+  openshiftUrl: string = "/assets/openshift-icon.svg";
+  oracleUrl: string = "/assets/oracle-icon.png";
+}   

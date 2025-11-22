@@ -1,4 +1,4 @@
-img{
+img {
     width: 100%;
     display: flex;
 }
@@ -22,9 +22,9 @@ header .content h4 {
 header .content h1 {
     color: white;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 4rem;
+    line-height: 1.2;
 }
 
 header .content h1 span {
@@ -33,9 +33,12 @@ header .content h1 span {
     color: transparent;
 }
 
-header .content p{
-    margin-bottom: 2rem;
+header .content p {
+    margin-bottom: 1rem;
     color: #ccc;
+    line-height: 1.8;
+    max-width: 600px;
+    font-size: 1.1rem;
 }
 
 header .content .btn {
@@ -48,7 +51,25 @@ header .content .btn {
     transition: all 0.3s ease;
 }
 
-header .image {
+header .btn-download {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    transform: translateY(-2px);
+}
+
+.image {
     position: relative;
     transition: all 0.3s ease-in-out;
 }
@@ -57,30 +78,34 @@ header .image:hover {
     transform: scale(1.05);
 }
 
-header .image img{
+header .image img {
     max-width: 600;
     margin: auto;
     border-radius: 15px;
 }
 
+.button-container {
+    display: flex;
+    gap: 1rem;
+}
+
 /* responsive */
 
 @media (max-width: 768px) {
-    header{
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    header .content h1{
+    header .content h1 {
         line-height: 3rem;
     }
 
-    header .image{
+    header .image {
         grid-area: 1/1/2/2;
         width: 100px;
     }
 
-    header .image::before{
+    header .image::before {
         display: none;
     }
 }
-

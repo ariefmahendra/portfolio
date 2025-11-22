@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ScrollAnimationDirective } from '../directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [],
+  imports: [ScrollAnimationDirective],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css'
 })
@@ -14,4 +15,5 @@ export class ExperienceComponent {
   mirocleUrl: string = "/assets/mirocle.svg";
   procurementUrl: string = "/assets/procurement.svg";
   enigmaLaundry: string = "/assets/enigma-laundry.svg";
+  smartRemittanceUrl: string = "/assets/sr.png";
 }

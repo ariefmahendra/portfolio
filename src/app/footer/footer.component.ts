@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+  currentYear: number = new Date().getFullYear();
   instagramUrl: string = "assets/instagram-logo.png";
   githubUrl: string = "assets/github-logo.png";
   telegramUrl: string = "assets/telegram-logo.png";
